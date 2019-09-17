@@ -1,0 +1,104 @@
+\hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Square\+Res.\+cpp\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8cpp_a539716722220e7fb08fbce2070b75adf}{User\+Fr\+Read} (unsigned int Num\+Elem, long double $\ast$Elements, const char $\ast$Greeting, int Max\+Tries)
+\item 
+int \hyperlink{main_8cpp_af9a3c657f416e33c6c94ff0936df9b63}{Fill} (long double $\ast$mas, unsigned int N\+UM, long double filler)
+\item 
+int \hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{main_8cpp_a58732d68137f37824a99677c89169763}{M\+A\+X\+T\+R\+I\+ES} = 3
+\begin{DoxyCompactList}\small\item\em Макс. кол-\/во попыток ввода \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_af9a3c657f416e33c6c94ff0936df9b63}\label{main_8cpp_af9a3c657f416e33c6c94ff0936df9b63}} 
+\index{main.\+cpp@{main.\+cpp}!Fill@{Fill}}
+\index{Fill@{Fill}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Fill()}{Fill()}}
+{\footnotesize\ttfamily int Fill (\begin{DoxyParamCaption}\item[{long double $\ast$}]{mas,  }\item[{unsigned int}]{N\+UM,  }\item[{long double}]{filler }\end{DoxyParamCaption})}
+
+Заполняет(инициализирует) массив указанными числами 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mas} & (long double$\ast$) указатель на массив \\
+\hline
+\mbox{\tt in}  & {\em N\+UM} & (unsigned int) число элементов массива \\
+\hline
+\mbox{\tt in}  & {\em filler} & (long double) число для заполнения\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 89 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Номер ошибки ~\newline
+1 -\/ ошибка выполнения \hyperlink{_square_res_8cpp_a701a0c4aee5f746c18eb110e1d5a8261}{Square\+Res()} ~\newline
+2 -\/ ошибка ввода
+\end{DoxyReturn}
+
+
+Definition at line 23 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a539716722220e7fb08fbce2070b75adf}\label{main_8cpp_a539716722220e7fb08fbce2070b75adf}} 
+\index{main.\+cpp@{main.\+cpp}!User\+Fr\+Read@{User\+Fr\+Read}}
+\index{User\+Fr\+Read@{User\+Fr\+Read}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{User\+Fr\+Read()}{UserFrRead()}}
+{\footnotesize\ttfamily int User\+Fr\+Read (\begin{DoxyParamCaption}\item[{unsigned int}]{Num\+Elem,  }\item[{long double $\ast$}]{Elements,  }\item[{const char $\ast$}]{Greeting,  }\item[{int}]{Max\+Tries }\end{DoxyParamCaption})}
+
+Считывает числа в массив 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Num\+Elem} & (unsigned int) число элементов массива \\
+\hline
+\mbox{\tt in}  & {\em Elements} & (long double$\ast$) указатель на массив \\
+\hline
+\mbox{\tt in}  & {\em Greeting} & (const char$\ast$) Приветствие на ввод \\
+\hline
+\mbox{\tt in}  & {\em Max\+Tries} & (int) Макимальное кол-\/во попыток ввода элемента \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ считывание успешно; 1 -\/ превышено макс кол-\/во попыток ввода
+\end{DoxyReturn}
+
+
+Definition at line 54 of file main.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_a58732d68137f37824a99677c89169763}\label{main_8cpp_a58732d68137f37824a99677c89169763}} 
+\index{main.\+cpp@{main.\+cpp}!M\+A\+X\+T\+R\+I\+ES@{M\+A\+X\+T\+R\+I\+ES}}
+\index{M\+A\+X\+T\+R\+I\+ES@{M\+A\+X\+T\+R\+I\+ES}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{M\+A\+X\+T\+R\+I\+ES}{MAXTRIES}}
+{\footnotesize\ttfamily const int M\+A\+X\+T\+R\+I\+ES = 3}
+
+
+
+Макс. кол-\/во попыток ввода 
+
+
+
+Definition at line 21 of file main.\+cpp.
+

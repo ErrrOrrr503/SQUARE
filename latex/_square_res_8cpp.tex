@@ -1,0 +1,137 @@
+\hypertarget{_square_res_8cpp}{}\section{Square\+Res.\+cpp File Reference}
+\label{_square_res_8cpp}\index{Square\+Res.\+cpp@{Square\+Res.\+cpp}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+Include dependency graph for Square\+Res.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{_square_res_8cpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{_square_res_8cpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_square_res_8cpp_a423e5a7bfec38724690b61f5a7fed838}{I\+N\+F\+IN}~-\/1
+\begin{DoxyCompactList}\small\item\em Константа обозначает бескнечное кол-\/во корней \end{DoxyCompactList}\item 
+\#define \hyperlink{_square_res_8cpp_a9c7b069fee3c8184e14a7de8e5da2dc6}{P\+R\+E\+C\+I\+S\+I\+ON}~32
+\begin{DoxyCompactList}\small\item\em Константа указывает точность сранение чисел с плавабщей точкой (кол-\/во знаков после запятой) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_square_res_8cpp_aab842cd94b3bf15e007dc497f0a31d08}{fl\+C\+O\+MP} (long double t1, long double t2, int precision)
+\item 
+void \hyperlink{_square_res_8cpp_a952ecdf4c8265b10b53138cc9b295e13}{Linear\+Res} (long double a, long double b, long double $\ast$x)
+\item 
+int \hyperlink{_square_res_8cpp_a701a0c4aee5f746c18eb110e1d5a8261}{Square\+Res} (long double a, long double b, long double c, long double $\ast$x1, long double $\ast$x2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_square_res_8cpp_a423e5a7bfec38724690b61f5a7fed838}\label{_square_res_8cpp_a423e5a7bfec38724690b61f5a7fed838}} 
+\index{Square\+Res.\+cpp@{Square\+Res.\+cpp}!I\+N\+F\+IN@{I\+N\+F\+IN}}
+\index{I\+N\+F\+IN@{I\+N\+F\+IN}!Square\+Res.\+cpp@{Square\+Res.\+cpp}}
+\subsubsection{\texorpdfstring{I\+N\+F\+IN}{INFIN}}
+{\footnotesize\ttfamily \#define I\+N\+F\+IN~-\/1}
+
+
+
+Константа обозначает бескнечное кол-\/во корней 
+
+
+
+Definition at line 5 of file Square\+Res.\+cpp.
+
+\mbox{\Hypertarget{_square_res_8cpp_a9c7b069fee3c8184e14a7de8e5da2dc6}\label{_square_res_8cpp_a9c7b069fee3c8184e14a7de8e5da2dc6}} 
+\index{Square\+Res.\+cpp@{Square\+Res.\+cpp}!P\+R\+E\+C\+I\+S\+I\+ON@{P\+R\+E\+C\+I\+S\+I\+ON}}
+\index{P\+R\+E\+C\+I\+S\+I\+ON@{P\+R\+E\+C\+I\+S\+I\+ON}!Square\+Res.\+cpp@{Square\+Res.\+cpp}}
+\subsubsection{\texorpdfstring{P\+R\+E\+C\+I\+S\+I\+ON}{PRECISION}}
+{\footnotesize\ttfamily \#define P\+R\+E\+C\+I\+S\+I\+ON~32}
+
+
+
+Константа указывает точность сранение чисел с плавабщей точкой (кол-\/во знаков после запятой) 
+
+
+
+Definition at line 8 of file Square\+Res.\+cpp.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_square_res_8cpp_aab842cd94b3bf15e007dc497f0a31d08}\label{_square_res_8cpp_aab842cd94b3bf15e007dc497f0a31d08}} 
+\index{Square\+Res.\+cpp@{Square\+Res.\+cpp}!fl\+C\+O\+MP@{fl\+C\+O\+MP}}
+\index{fl\+C\+O\+MP@{fl\+C\+O\+MP}!Square\+Res.\+cpp@{Square\+Res.\+cpp}}
+\subsubsection{\texorpdfstring{fl\+C\+O\+M\+P()}{flCOMP()}}
+{\footnotesize\ttfamily int fl\+C\+O\+MP (\begin{DoxyParamCaption}\item[{long double}]{t1,  }\item[{long double}]{t2,  }\item[{int}]{precision }\end{DoxyParamCaption})}
+
+Сравнивает 2 числа с точностью до precision знаков после запятой 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em t1} & (long double) 1е число \\
+\hline
+\mbox{\tt in}  & {\em t2} & (long double) 2е число \\
+\hline
+\mbox{\tt in}  & {\em precision} & (int) точность \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 Если t1$>$t2; -\/1 Если t2$>$t1; 0 если t1=t2
+\end{DoxyReturn}
+
+
+Definition at line 49 of file Square\+Res.\+cpp.
+
+\mbox{\Hypertarget{_square_res_8cpp_a952ecdf4c8265b10b53138cc9b295e13}\label{_square_res_8cpp_a952ecdf4c8265b10b53138cc9b295e13}} 
+\index{Square\+Res.\+cpp@{Square\+Res.\+cpp}!Linear\+Res@{Linear\+Res}}
+\index{Linear\+Res@{Linear\+Res}!Square\+Res.\+cpp@{Square\+Res.\+cpp}}
+\subsubsection{\texorpdfstring{Linear\+Res()}{LinearRes()}}
+{\footnotesize\ttfamily void Linear\+Res (\begin{DoxyParamCaption}\item[{long double}]{a,  }\item[{long double}]{b,  }\item[{long double $\ast$}]{x }\end{DoxyParamCaption})}
+
+Решает линейное уравнение 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em a} & (long double) коэф-\/т при 1й степени \\
+\hline
+\mbox{\tt in}  & {\em b} & (long double) коэф-\/т при 0й степени \\
+\hline
+\mbox{\tt in}  & {\em x} & (long double$\ast$) указатель на корень\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 65 of file Square\+Res.\+cpp.
+
+\mbox{\Hypertarget{_square_res_8cpp_a701a0c4aee5f746c18eb110e1d5a8261}\label{_square_res_8cpp_a701a0c4aee5f746c18eb110e1d5a8261}} 
+\index{Square\+Res.\+cpp@{Square\+Res.\+cpp}!Square\+Res@{Square\+Res}}
+\index{Square\+Res@{Square\+Res}!Square\+Res.\+cpp@{Square\+Res.\+cpp}}
+\subsubsection{\texorpdfstring{Square\+Res()}{SquareRes()}}
+{\footnotesize\ttfamily int Square\+Res (\begin{DoxyParamCaption}\item[{long double}]{a,  }\item[{long double}]{b,  }\item[{long double}]{c,  }\item[{long double $\ast$}]{x1,  }\item[{long double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+Записывает корни по адресам $\ast$x1 $\ast$x2 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em a} & (long double) 1й коэф-\/т \\
+\hline
+\mbox{\tt in}  & {\em b} & (long double) 2й коэф-\/т \\
+\hline
+\mbox{\tt in}  & {\em c} & (long double) 3й коэф-\/т \\
+\hline
+\mbox{\tt in}  & {\em x1} & ($\ast$long double) указатель на 1й корень \\
+\hline
+\mbox{\tt in}  & {\em x2} & ($\ast$long double) указатель на 2й корень \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Количество корней (0, 1, 2) или I\+N\+F\+IN -\/ бесконечное кол-\/во решений
+\end{DoxyReturn}
+
+
+Definition at line 13 of file Square\+Res.\+cpp.
+
