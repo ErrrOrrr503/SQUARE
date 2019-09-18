@@ -23,12 +23,12 @@ This graph shows which files directly or indirectly include this file\+:
 \item 
 \#define \hyperlink{_square_res_8cpp_a423e5a7bfec38724690b61f5a7fed838}{I\+N\+F\+IN}~-\/1
 \begin{DoxyCompactList}\small\item\em Константа обозначает бескнечное кол-\/во корней \end{DoxyCompactList}\item 
-\#define \hyperlink{_square_res_8cpp_a9c7b069fee3c8184e14a7de8e5da2dc6}{P\+R\+E\+C\+I\+S\+I\+ON}~32
+\#define \hyperlink{_square_res_8cpp_a9c7b069fee3c8184e14a7de8e5da2dc6}{P\+R\+E\+C\+I\+S\+I\+ON}~0.\+00000000000000000000000000000001L
 \begin{DoxyCompactList}\small\item\em Константа указывает точность сранение чисел с плавабщей точкой (кол-\/во знаков после запятой) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{_square_res_8cpp_aab842cd94b3bf15e007dc497f0a31d08}{fl\+C\+O\+MP} (long double t1, long double t2, int precision)
+int \hyperlink{_square_res_8cpp_a4a0bd50fcc6c0fb73cc1ca4074367c63}{fl\+C\+O\+MP} (long double t1, long double t2, long double pres)
 \item 
 void \hyperlink{_square_res_8cpp_a952ecdf4c8265b10b53138cc9b295e13}{Linear\+Res} (long double a, long double b, long double $\ast$x)
 \item 
@@ -55,7 +55,7 @@ Definition at line 5 of file Square\+Res.\+cpp.
 \index{Square\+Res.\+cpp@{Square\+Res.\+cpp}!P\+R\+E\+C\+I\+S\+I\+ON@{P\+R\+E\+C\+I\+S\+I\+ON}}
 \index{P\+R\+E\+C\+I\+S\+I\+ON@{P\+R\+E\+C\+I\+S\+I\+ON}!Square\+Res.\+cpp@{Square\+Res.\+cpp}}
 \subsubsection{\texorpdfstring{P\+R\+E\+C\+I\+S\+I\+ON}{PRECISION}}
-{\footnotesize\ttfamily \#define P\+R\+E\+C\+I\+S\+I\+ON~32}
+{\footnotesize\ttfamily \#define P\+R\+E\+C\+I\+S\+I\+ON~0.\+00000000000000000000000000000001L}
 
 
 
@@ -68,11 +68,11 @@ Definition at line 8 of file Square\+Res.\+cpp.
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{_square_res_8cpp_aab842cd94b3bf15e007dc497f0a31d08}\label{_square_res_8cpp_aab842cd94b3bf15e007dc497f0a31d08}} 
+\mbox{\Hypertarget{_square_res_8cpp_a4a0bd50fcc6c0fb73cc1ca4074367c63}\label{_square_res_8cpp_a4a0bd50fcc6c0fb73cc1ca4074367c63}} 
 \index{Square\+Res.\+cpp@{Square\+Res.\+cpp}!fl\+C\+O\+MP@{fl\+C\+O\+MP}}
 \index{fl\+C\+O\+MP@{fl\+C\+O\+MP}!Square\+Res.\+cpp@{Square\+Res.\+cpp}}
 \subsubsection{\texorpdfstring{fl\+C\+O\+M\+P()}{flCOMP()}}
-{\footnotesize\ttfamily int fl\+C\+O\+MP (\begin{DoxyParamCaption}\item[{long double}]{t1,  }\item[{long double}]{t2,  }\item[{int}]{precision }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int fl\+C\+O\+MP (\begin{DoxyParamCaption}\item[{long double}]{t1,  }\item[{long double}]{t2,  }\item[{long double}]{pres }\end{DoxyParamCaption})}
 
 Сравнивает 2 числа с точностью до precision знаков после запятой 
 \begin{DoxyParams}[1]{Parameters}
@@ -80,7 +80,7 @@ Definition at line 8 of file Square\+Res.\+cpp.
 \hline
 \mbox{\tt in}  & {\em t2} & (long double) 2е число \\
 \hline
-\mbox{\tt in}  & {\em precision} & (int) точность \\
+\mbox{\tt in}  & {\em pres} & (long double) точность \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -107,7 +107,7 @@ Definition at line 49 of file Square\+Res.\+cpp.
 \end{DoxyParams}
 
 
-Definition at line 65 of file Square\+Res.\+cpp.
+Definition at line 64 of file Square\+Res.\+cpp.
 
 \mbox{\Hypertarget{_square_res_8cpp_a701a0c4aee5f746c18eb110e1d5a8261}\label{_square_res_8cpp_a701a0c4aee5f746c18eb110e1d5a8261}} 
 \index{Square\+Res.\+cpp@{Square\+Res.\+cpp}!Square\+Res@{Square\+Res}}

@@ -90,14 +90,14 @@ Macros</h2></td></tr>
 <tr class="memitem:a423e5a7bfec38724690b61f5a7fed838"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_square_res_8cpp.html#a423e5a7bfec38724690b61f5a7fed838">INFIN</a>&#160;&#160;&#160;-1</td></tr>
 <tr class="memdesc:a423e5a7bfec38724690b61f5a7fed838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Константа обозначает бескнечное кол-во корней  <a href="#a423e5a7bfec38724690b61f5a7fed838">More...</a><br /></td></tr>
 <tr class="separator:a423e5a7bfec38724690b61f5a7fed838"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c7b069fee3c8184e14a7de8e5da2dc6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_square_res_8cpp.html#a9c7b069fee3c8184e14a7de8e5da2dc6">PRECISION</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memitem:a9c7b069fee3c8184e14a7de8e5da2dc6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_square_res_8cpp.html#a9c7b069fee3c8184e14a7de8e5da2dc6">PRECISION</a>&#160;&#160;&#160;0.00000000000000000000000000000001L</td></tr>
 <tr class="memdesc:a9c7b069fee3c8184e14a7de8e5da2dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Константа указывает точность сранение чисел с плавабщей точкой (кол-во знаков после запятой)  <a href="#a9c7b069fee3c8184e14a7de8e5da2dc6">More...</a><br /></td></tr>
 <tr class="separator:a9c7b069fee3c8184e14a7de8e5da2dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aab842cd94b3bf15e007dc497f0a31d08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_square_res_8cpp.html#aab842cd94b3bf15e007dc497f0a31d08">flCOMP</a> (long double t1, long double t2, int precision)</td></tr>
-<tr class="separator:aab842cd94b3bf15e007dc497f0a31d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a0bd50fcc6c0fb73cc1ca4074367c63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_square_res_8cpp.html#a4a0bd50fcc6c0fb73cc1ca4074367c63">flCOMP</a> (long double t1, long double t2, long double pres)</td></tr>
+<tr class="separator:a4a0bd50fcc6c0fb73cc1ca4074367c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a952ecdf4c8265b10b53138cc9b295e13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_square_res_8cpp.html#a952ecdf4c8265b10b53138cc9b295e13">LinearRes</a> (long double a, long double b, long double *x)</td></tr>
 <tr class="separator:a952ecdf4c8265b10b53138cc9b295e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a701a0c4aee5f746c18eb110e1d5a8261"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_square_res_8cpp.html#a701a0c4aee5f746c18eb110e1d5a8261">SquareRes</a> (long double a, long double b, long double c, long double *x1, long double *x2)</td></tr>
@@ -129,7 +129,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PRECISION&#160;&#160;&#160;32</td>
+          <td class="memname">#define PRECISION&#160;&#160;&#160;0.00000000000000000000000000000001L</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -141,8 +141,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aab842cd94b3bf15e007dc497f0a31d08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab842cd94b3bf15e007dc497f0a31d08">&#9670;&nbsp;</a></span>flCOMP()</h2>
+<a id="a4a0bd50fcc6c0fb73cc1ca4074367c63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a0bd50fcc6c0fb73cc1ca4074367c63">&#9670;&nbsp;</a></span>flCOMP()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,8 +162,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>precision</em>&#160;</td>
+          <td class="paramtype">long double&#160;</td>
+          <td class="paramname"><em>pres</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -176,7 +176,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">t1</td><td>(long double) 1е число </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">t2</td><td>(long double) 2е число </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">precision</td><td>(int) точность </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pres</td><td>(long double) точность </td></tr>
   </table>
   </dd>
 </dl>
@@ -226,7 +226,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_square_res_8cpp_source.html#l00065">65</a> of file <a class="el" href="_square_res_8cpp_source.html">SquareRes.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_square_res_8cpp_source.html#l00064">64</a> of file <a class="el" href="_square_res_8cpp_source.html">SquareRes.cpp</a>.</p>
 
 </div>
 </div>
